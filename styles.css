@@ -1,0 +1,511 @@
+@media (min-width: 800px) {
+
+html {
+    scroll-behavior: smooth;
+    height: 170rem;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+	color: rgb(43, 24, 60);
+    margin: 0;      
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgb(43, 24, 60); /* Red color */
+}
+
+
+/* Scrollbars */
+*:not(footer)::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-track {
+    background: rgb(100, 77, 121);
+    border-radius: 4px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-thumb {
+    background: rgb(100, 77, 121);
+    border-radius: 8px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 77, 121);
+  }
+  
+  /* For Firefox */
+  *:not(body) {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(100, 77, 121) rgb(230, 213, 246);
+  }  
+
+
+a:link {
+    color: rgb(100, 77, 121);
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: rgb(230, 213, 246);
+    text-decoration: bold;
+  }
+
+  a:hover {
+    color: rgb(193,39,45);
+    text-decoration: underline;
+  }
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(226, 226, 226);
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    text-align: justify;
+}
+
+.topnav {
+    position: fixed;
+    height: 3.5rem;
+    z-index: 1;
+    top: 0px;
+    left: 0rem;
+    right: 0rem;
+    overflow: hidden;
+    justify-content: space-around;
+    color: rgb(43, 24, 60);
+    padding: 0;
+    padding-right: 90vw;
+    padding-bottom: 0rem;
+    background-color: white;
+}
+
+.topnav-right {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0rem;
+    overflow: hidden;
+    justify-content: space-around;
+    color: rgb(43, 24, 60);
+    padding: 1rem;
+    padding-top: 1rem;
+    background-color: white;
+}
+
+.topnav a {
+    color: rgb(43, 24, 60);
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav a:hover {
+    color: rgb(193,39,45);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    margin-top: -0.5rem;
+    margin-left: 2rem;
+    height: 3.5rem;
+    padding:0;
+}
+
+.redes {
+    font-size: 13px;
+    margin-left: 1rem;
+}
+footer {
+    z-index: -1;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(43, 24, 60);
+    border: none;
+}
+
+.cabecera {
+    font-size: 23px;
+    padding-left: 2rem;
+}
+
+
+
+/*Home area*/
+
+.container1 {
+  padding-top: 9rem;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.homecontent {
+  background-color: white;
+  border: 2px solid rgb(43, 24, 60);
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 23rem;
+}
+
+.title {
+display: flex;
+float: left;
+width: 66%;
+margin-top: 3rem;
+margin-left: 1rem;
+text-align: justify;
+}
+
+.texto {
+  display: flex;
+  position: relative;
+font-size: larger;
+float: left;
+width: 50%;
+margin-top: -1rem;
+margin-left: 1rem;
+  margin-right: auto;
+  margin-bottom: 2rem;
+text-align: justify;
+}
+
+.homecontent > .slideshow-container {
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  left: 73%;
+  transform: translate(-50%, -25%);
+  width: 43%;
+  align-content: center;
+  transition: opacity 3s ease-in-out;
+  justify-content: center;
+}
+
+  .imgs {
+      border-radius: 10px;
+  }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+
+
+/*Actualidad area*/
+
+.container2 {
+  padding-top: 4rem;
+  margin-bottom: 0;
+}
+
+.actualidadcontent {
+  
+  z-index: 0;
+  margin-top: 0rem;
+  background-color: white;
+  border: 2px solid rgb(43, 24, 60);
+  border-radius: 15px 0px 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 26rem;
+  width: 40rem;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 2rem;
+  overflow-y: auto;
+}
+
+.cabecera {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.fechalugar {
+  font-size: small;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.articulo {
+  position: relative;
+  font-size: medium;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.imgactualidad {
+  position: relative;
+  justify-content: center;
+  text-align: justify;
+  float: right;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 12rem;
+  border-radius: 8%;
+}
+
+.firma {
+  font-size: small;
+  text-align: right;
+  margin-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+
+/*Espectáculos area*/
+
+.container3 {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  height: 29rem;
+  z-index: 2;
+}
+
+.espectaculoscontent {
+  padding-top: 2rem;
+  border: 2px solid rgb(43, 24, 60);
+  border-radius: 15px 15px 15px 15px;
+  height: 29rem;
+  width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+
+.menuespectaculos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 75rem;
+  height: 24rem;
+  border: 1px solid rgb(230, 213, 246);
+  border-radius: 10px;
+  margin-top: -3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  overflow: hidden;
+}
+.menu-item {
+  padding: 1rem;
+  border-right: 1px solid rgb(230, 213, 246);
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: justify;
+}
+.menu-item:hover {
+  background: rgb(230, 213, 246);
+}
+
+.titulo {
+  margin-left: 1rem;
+}
+
+.content {
+  border-radius: 10px;
+  display: none;
+  height: 16rem;
+  width: 71rem;
+  padding: 1rem;
+  background: white;
+  float: left;
+}
+
+.menu-item.active .content {
+  display: block;
+}
+
+.imgsespectaculos {
+  display: flex;
+  height: 18rem;
+  border-radius: 8px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-end;
+}
+
+.menu-item.active > .imgsespectaculos {
+  display: none;
+}
+
+.sinopsis {
+  width: 40rem;
+}
+
+.ficha {
+  font-weight: bold;
+  position: relative;
+  top: 0rem;
+}
+
+.ytlink {
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+  float: right;
+  margin-right: 0rem;
+  bottom: 9.5rem;
+}
+
+
+
+/*Quienes somos area*/
+
+.container4 {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  height: 29rem;
+  z-index: 2;
+}
+
+.quienessomoscontent {
+  padding-top: 2rem;
+  border: 2px solid rgb(43, 24, 60);
+  border-radius: 15px 15px 15px 15px;
+  height: 29rem;
+  width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.menusomos {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 64rem;
+  height: 24rem;
+  border: 1px solid rgb(230, 213, 246);
+  border-radius: 10px;
+  margin-top: -2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  overflow: hidden;
+}
+.menu-item4 {
+  padding: 0.5rem;
+  /*cursor: pointer;
+  transition: background 0.3s;*/
+  text-align: justify;
+}
+.menu-item4:hover {
+  /*background: rgb(230, 213, 246);*/
+}
+
+.componente {
+  margin-left: 1rem;
+}
+
+.content4 {
+  border-radius: 10px;
+  display: none;
+  height: 1rem;
+  width: 5rem;
+  padding: 0rem;
+  background: white;
+  float: left;
+}
+
+.menu-item4.active .content {
+  display: flex;
+}
+
+.imgscomponente {
+  display: flex;
+  height: 7rem;
+  border-radius: 8px;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.bio {
+  position: relative;
+  font-size: medium;
+}
+
+.redes {
+  float: inline-end;
+}
+
+
+
+
+/*Contacto area*/
+
+.container5 {
+  padding-top: 4rem;
+  margin-bottom: 0;
+}
+
+.contactocontent {
+  z-index: 0;
+  margin-top: 0rem;
+  background-color: white;
+  border: 2px solid rgb(43, 24, 60);
+  border-radius: 15px 15px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  width: 63rem;
+  padding-top: 2rem;
+}
+
+.cabecera {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contactotxt {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: justify;
+  font-size: large;
+  line-height: 2;
+  text-decoration: none;
+}
+
+
+
+}
