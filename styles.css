@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    height: 170rem;
+    height: 190rem;
   }
 
 body {
@@ -161,6 +161,7 @@ footer {
   padding-top: 9rem;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
+  margin-bottom: 5rem;
 }
 
 .homecontent {
@@ -202,7 +203,7 @@ text-align: justify;
   transform: translate(-50%, -25%);
   width: 43%;
   align-content: center;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 4s ease-in-out;
   justify-content: center;
 }
 
@@ -226,7 +227,7 @@ text-align: justify;
 
 .container2 {
   padding-top: 4rem;
-  margin-bottom: 0rem;
+  margin-bottom: 5rem;
 }
 
 .actualidadcontent {
@@ -294,14 +295,14 @@ text-align: justify;
   padding-bottom: 0;
   height: 29rem;
   z-index: 1;
-  margin-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .espectaculoscontent {
   padding-top: 2rem;
   border: 2px solid rgb(43, 24, 60);
   border-radius: 15px 15px 15px 15px;
-  height: 29rem;
+  height: 28rem;
   width: 78rem;
   margin-left: auto;
   margin-right: auto;
@@ -390,7 +391,6 @@ text-align: justify;
 
 .container4 {
   padding-top: 4rem;
-  margin-bottom: 0;
 }
 
 .quienessomoscontent {
@@ -404,7 +404,7 @@ text-align: justify;
   height: 27rem;
   width: 73rem;
   padding-top: 2rem;
-
+  margin-bottom: 5rem;
 }
 
 .cabecera4 {
