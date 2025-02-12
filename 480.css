@@ -1,0 +1,273 @@
+/* Styles for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    
+    html {
+        height: auto; /* Adjust height for smaller screens */
+        color: rgb(43, 24, 60);
+
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 14px; /* Smaller font size for better readability */
+        height: 300rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        overflow-y: auto;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid rgb(43, 24, 60);
+      }
+
+    header {
+        flex-direction: column; /* Stack header content vertically */
+    }
+
+    h1 {
+        margin-top: 0.1rem; /* Reduce top margin */
+        font-size: 20px; /* Smaller font size for headings */
+        text-align: center; /* Center-align headings */
+    }
+
+    .cabecera {
+        margin-bottom: 0rem;
+    }
+
+/*    .mobile-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 1rem;
+      }
+*/      
+      .mobnav {
+        overflow: hidden;
+        color: rgb(43, 24, 60);
+        background-color: rgb(230, 213, 246);
+        position: relative;
+        margin-left: 0rem;
+      }
+      
+      .mobnav #myLinks {
+        display: none;
+      }
+      
+      .mobnav a {
+        color: rgb(43, 24, 60);
+        padding: 10px 12px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .mobnav a.icon {
+        background: rgb(100, 77, 121);
+        color: rgb(230, 213, 246);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .mobnav a:hover {
+        background-color: rgb(100, 77, 121);
+        color: rgb(230, 213, 246);
+      }
+      
+      .active {
+        background-color: rgb(100, 77, 121);
+        color: white;
+      }
+
+
+    /* Scrollbars */
+*:not(footer)::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-track {
+    background: rgb(100, 77, 121);
+    border-radius: 4px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-thumb {
+    background: rgb(100, 77, 121);
+    border-radius: 8px;
+  }
+  
+  *:not(body)::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 77, 121);
+  }
+  
+  /* For Firefox */
+  *:not(body) {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(100, 77, 121) rgb(230, 213, 246);
+  }  
+
+    .topnav, slideshow-container {
+        display: none;
+    }
+
+    .logo {
+        margin-left: -0.4rem; /* Adjust logo margin */
+        height: 2.5rem; /* Reduce logo size */
+    }
+
+    footer {
+        display: none;
+    }
+
+    .imgs {
+        display: none;
+    }
+
+    .title {
+        font-size: 18px; /* Smaller font size for headers */
+        padding-left: 0rem; /* Reduce padding for smaller screens */
+        text-align: justify;
+    }   
+
+
+
+
+/*Home area*/
+
+    .container1 {
+        padding-top: 1rem; /* Reduce padding for smaller screens */
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .homecontent {
+        width: 100%;  /* Adjusted width to fit smaller screens */
+        height: auto; /* Height set to auto to accommodate content */
+        text-align: justify;
+    }
+
+    .cabecera {
+        text-align: justify;
+        margin-left: 0;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+
+    .texto {
+        margin-top: 0; /* Reduce top margin */
+        margin-bottom: 0; /* Reduce bottom margin */
+        font-size: medium; /* Smaller font size for text */
+        text-align: justify;
+    }
+
+    .homecontent > .slideshow-container {
+        display: none;
+        position: static; /* Remove absolute positioning */
+        left: auto; /* Reset left positioning */
+        transform: none; /* Remove transform */
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 1rem auto; /* Center the slideshow */
+    }
+
+    .imgs {
+        display: none;
+    }
+
+
+
+
+
+
+/*Actualidad area*/
+    
+    .container2 {
+        padding-top: 1rem; /* Reduce padding for smaller screens */
+        width: 98%;
+        display: block;
+        height: 42%;
+    }
+
+    .actualidadcontent {
+        width: 100%; /* Adjusted width to fit smaller screens */
+        height: 21rem; /* Height set to auto to accommodate content */
+        margin-left: 0.1rem; /* Centering the container */
+        margin-right: 0.1rem; /* Centering the container */
+        text-align: justify;
+        overflow: scroll;
+    }
+
+    .fechalugar {
+        width: 100%;
+        font-size: smaller; /* Smaller font size for smaller screens */
+        margin-left: auto; /* Reduced margin for smaller screens */
+        margin-right: auto; /* Reduced margin for smaller screens */
+    }
+
+    .articulo {
+        width: 100%;
+        font-size: small; /* Smaller font size for smaller screens */
+        margin-bottom: 0;
+    }
+
+    .imgactualidad {
+        float: right;
+        width: 8rem; /* Reduced image width for smaller screens */
+        margin-left: 0.5rem; /* Reduced margin for smaller screens */
+        margin-right: 0.5rem; /* Reduced margin for smaller screens */
+        border-radius: 5%;
+    }
+
+    .firma {
+        font-size: smaller; /* Smaller font size for smaller screens */
+        margin-right: 0; /* Reduced margin for smaller screens */
+        float: right;
+    }
+
+
+/*Espectáculos area*/
+
+.container3, .espectaculoscontent {
+    display: none;
+}
+
+
+
+
+
+/*Quiénes somos area*/
+
+.container4 {
+    display: none;
+}
+
+
+
+
+/*Contacto area*/
+
+    .container5 {
+        padding-top: 1rem; /* Reduce padding for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactocontent {
+        width: 100%; /* Adjust width to fit smaller screens */
+        height: auto; /* Allow height to adjust to content */
+        padding-top: 1rem; /* Reduce padding for smaller screens */
+        padding-bottom: 0; /* Add padding at the bottom */
+    }
+
+    .contactotxt {
+        padding-left: 1rem; /* Reduce left padding */
+        padding-right: 1rem; /* Reduce right padding */
+        font-size: medium; /* Smaller font size for better readability */
+        line-height: 1.5; /* Adjust line height for smaller screens */
+    }
+}
